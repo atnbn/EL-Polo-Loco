@@ -1,0 +1,217 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+canvas {
+    background-color: black;
+    display: block;
+    z-index: 1;
+}
+
+.game-container{
+    z-index: 1;
+    position: relative;
+}
+
+
+
+.background {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+
+
+.fullscreen-img{
+    height: 36px;
+    margin-right: 5px;
+}
+.fullscreen-img:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.start-img {
+    height: 480px;
+    width: 720px;
+
+    position: absolute;
+    opacity: 1;
+    z-index: 1;
+}
+
+
+.start-button {
+    height: 45px;
+    width: 150px;
+    background-color: #FFDC00;
+    color: white;
+    border: 1.5px solid #C4613A;
+    font-size: 16px;
+    bottom: 0px;
+    left: 40%;
+    z-index: 100;
+    position: absolute;
+}
+
+.start-game:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.d-none {
+    display: none;
+}
+
+.end-img {
+    height: 480px;
+    width: 720px;
+    position: absolute;
+    top: 97px;
+    opacity: 1;
+}
+
+
+.restart-button {
+    height: 45px;
+    width: 150px;
+    background-color: #FFDC00;
+    color: white;
+    border: 1.5px solid #C4613A;
+    font-size: 16px;
+    top: 500px;
+    z-index: 100;
+    position: absolute;
+}
+
+.restart-button:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+
+.mute:hover {
+    opacity: 0.8;
+    border: 1px solid black;
+}
+
+
+.settings-container{
+    display: flex;
+    align-items: center;
+}
+
+
+.settings
+{
+    z-index: 1;
+    display: flex;
+    width: 720px;
+    justify-content: space-between;
+}
+.tutorial-text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.keybind{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.keybind-img{
+    height: 38px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 740px) {
+    canvas {
+        width: 100%!important;
+        height: inheri;
+    }
+    .start-img{
+        width: 100%;
+        height: 100%;
+    }
+    .game-container{
+        width: 100%;
+    }
+    title {
+        display: none;
+    }
+    .settings{
+        width: 100%;
+    }
+    .fullscreen-img{
+        height: 30px;
+    }
+    .tutorial-text {
+        font-size: 16px !important;
+    }
+
+    .keybind-img{
+        height: 30px;
+        margin-left: 2px;
+    }
+    .start-button{
+        width: 100px;
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .keybind{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .settings-container{
+        align-items: baseline;
+    }
+
+
+
+    
+}
+
+@media only screen and (max-height : 680 ){
+
+    .settings{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .keybind{
+        flex-direction:row;
+    }
+    .keybind-img{
+        height: 35px;
+        margin-left: 2px;
+    }
+}
